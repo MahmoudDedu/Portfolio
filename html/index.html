@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kevin | Portfolio</title>
+  <title>Mahmoud | Portfolio</title>
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="Kevin's professional portfolio showcasing UI/UX design, web design, and app design.">
@@ -33,7 +33,7 @@
 <body>
   <!-- الهيدر -->
   <header role="banner">
-    <div class="logo" aria-label="Logo">Mahmoud Darwish</div>
+    <div class="logo" aria-label="Logo">Mahmoud Darwish .</div>
     <nav role="navigation" aria-label="Main Navigation">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -47,21 +47,30 @@
 
   <!-- المحتوى الرئيسي -->
   <main>
-    <!-- قسم الرئيسية (Hero) -->
-    <section id="home" data-aos="fade-up">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
       <div class="container">
-        <div class="hero-text">
-          <small>UI/UX Designer</small>
-          <h1>Hi, I'm Mahmoud</h1>
-          <h2>From Syria</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Velit explicabo nobis suscipit illo reiciendis, libero ullam
-            temporibus voluptas nihil deleniti.
-          </p>
-        </div>
-        <div class="hero-image">
-          <img src="../images/avtar.jpg" alt="Kevin Image" loading="lazy">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-intro">
+              <span class="greeting">Hello, I'm</span>
+              <h1 class="name">Mahmoud Darwish</h1>
+              <h2 class="profession">Backend Developer</h2>
+            </div>
+            <div class="hero-cta">
+              <a href="#portfolio" class="primary-btn">View My Work</a>
+              <a href="#contact" class="secondary-btn">Let's Connect</a>
+            </div>
+            <div class="hero-socials">
+              <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+              <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            </div>
+          </div>
+          <div class="hero-image-container">
+            <div class="hero-image"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -75,14 +84,17 @@
         <div class="about-text">
           <h2>About Me</h2>
           <p>
-            I'm a passionate web designer and UI/UX specialist with a knack for creating
-            modern and responsive interfaces. I focus on user-centric design and believe
-            in delivering clean, efficient code.
+
+            I'm a dedicated backend developer with a strong passion for building robust and scalable applications.
+            I specialize in server-side logic, databases, and API development,
+            ensuring that systems run smoothly and efficiently.
+            My focus is on writing clean, maintainable code that delivers high performance.
           </p>
           <ul>
-            <li><strong>Skills:</strong> Web Design, UI/UX, Frontend Development</li>
-            <li><strong>Experience:</strong> 5+ years in the industry</li>
-            <li><strong>Education:</strong> Bachelor's in Computer Science</li>
+            <li><strong>Skills:</strong> Backend Development, API Design, Database Management, Server-Side Logic</li>
+            <li><strong>Experience:</strong> 5+ years in backend development</li>
+            <li><strong>Education:</strong> Bachelor's in Computer Science
+            </li>
           </ul>
         </div>
       </div>
@@ -94,21 +106,21 @@
         <h2 style="color: #ff0055; text-align: center; margin-bottom: 40px;">My Services</h2>
         <div class="services-container">
           <div class="service-box" data-aos="zoom-in">
-            <h3>Web Design</h3>
+            <h3>API Development</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, blanditiis.
+              Design and development of high-performance RESTful APIs
             </p>
           </div>
           <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
-            <h3>UI/UX Design</h3>
+            <h3>Database Solutions</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, blanditiis.
+              Design and optimization of SQL and NoSQL databases
             </p>
           </div>
           <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
-            <h3>App Design</h3>
+            <h3>Cloud Solutions</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, blanditiis.
+              Deployment and management on AWS, Azure, and Google Cloud.
             </p>
           </div>
         </div>
@@ -122,8 +134,8 @@
         <!-- أزرار الفلترة -->
         <div class="portfolio-filters">
           <button class="active" data-filter="all">All</button>
-          <button data-filter="web">Web Design</button>
-          <button data-filter="app">App Design</button>
+          <button data-filter="web">Attendance System</button>
+          <button data-filter="app">Realestate Web Site</button>
           <button data-filter="uiux">UI/UX</button>
         </div>
         <div class="portfolio-grid">
@@ -132,21 +144,21 @@
             <a href="../images/image1.png" data-lightbox="portfolio" data-title="Project One">
               <img src="../images/image1.png" alt="Project One" loading="lazy">
             </a>
-            <h4>Project One</h4>
+            <h4>Attendance System</h4>
           </div>
           <!-- عنصر معرض 2 -->
           <div class="portfolio-item" data-category="app">
             <a href="../images/image2.png" data-lightbox="portfolio" data-title="Project Two">
               <img src="../images/image2.png" alt="Project Two" loading="lazy">
             </a>
-            <h4>Project Two</h4>
+            <h4>Realestate Web Site</h4>
           </div>
           <!-- عنصر معرض 3 -->
           <div class="portfolio-item" data-category="uiux">
             <a href="../images/image3.png" data-lightbox="portfolio" data-title="Project Three">
               <img src="../images/image3.png" alt="Project Three" loading="lazy">
             </a>
-            <h4>Project Three</h4>
+            <h4>UI/UX</h4>
           </div>
         </div>
       </div>
