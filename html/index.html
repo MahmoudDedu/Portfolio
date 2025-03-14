@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kevin | Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Kevin's professional portfolio showcasing UI/UX design, web design, and app design.">
+  <meta name="keywords" content="Kevin, Portfolio, UI/UX, Web Design, App Design">
+  <meta property="og:title" content="Kevin | Portfolio">
+  <meta property="og:description" content="Explore the professional portfolio of Kevin, a creative UI/UX designer and web developer.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://yourdomain.com/">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- AOS Animation Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+  <!-- Lightbox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+
+  <!-- Internal CSS -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <!-- الهيدر -->
+  <header role="banner">
+    <div class="logo" aria-label="Logo">Mahmoud Darwish</div>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- المحتوى الرئيسي -->
+  <main>
+    <!-- قسم الرئيسية (Hero) -->
+    <section id="home" data-aos="fade-up">
+      <div class="container">
+        <div class="hero-text">
+          <small>UI/UX Designer</small>
+          <h1>Hi, I'm Mahmoud</h1>
+          <h2>From Syria</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Velit explicabo nobis suscipit illo reiciendis, libero ullam
+            temporibus voluptas nihil deleniti.
+          </p>
+        </div>
+        <div class="hero-image">
+          <img src="../images/avtar.jpg" alt="Kevin Image" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم نبذة عني (About) -->
+    <section id="about" data-aos="fade-right">
+      <div class="container">
+        <div class="about-img">
+          <img src="../images/avtar.jpg" alt="About Kevin" loading="lazy">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            I'm a passionate web designer and UI/UX specialist with a knack for creating
+            modern and responsive interfaces. I focus on user-centric design and believe
+            in delivering clean, efficient code.
+          </p>
+          <ul>
+            <li><strong>Skills:</strong> Web Design, UI/UX, Frontend Development</li>
+            <li><strong>Experience:</strong> 5+ years in the industry</li>
+            <li><strong>Education:</strong> Bachelor's in Computer Science</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الخدمات (Services) -->
+    <section id="services" data-aos="fade-up">
+      <div class="container">
+        <h2 style="color: #ff0055; text-align: center; margin-bottom: 40px;">My Services</h2>
+        <div class="services-container">
+          <div class="service-box" data-aos="zoom-in">
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, blanditiis.
+            </p>
+          </div>
+          <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
+            <h3>UI/UX Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, blanditiis.
+            </p>
+          </div>
+          <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
+            <h3>App Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, blanditiis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم معرض الأعمال (Portfolio) -->
+    <section id="portfolio" data-aos="fade-up">
+      <div class="container">
+        <h2 style="color: #ff0055;">My Portfolio</h2>
+        <!-- أزرار الفلترة -->
+        <div class="portfolio-filters">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="web">Web Design</button>
+          <button data-filter="app">App Design</button>
+          <button data-filter="uiux">UI/UX</button>
+        </div>
+        <div class="portfolio-grid">
+          <!-- عنصر معرض 1 -->
+          <div class="portfolio-item" data-category="web">
+            <a href="../images/image1.png" data-lightbox="portfolio" data-title="Project One">
+              <img src="../images/image1.png" alt="Project One" loading="lazy">
+            </a>
+            <h4>Project One</h4>
+          </div>
+          <!-- عنصر معرض 2 -->
+          <div class="portfolio-item" data-category="app">
+            <a href="../images/image2.png" data-lightbox="portfolio" data-title="Project Two">
+              <img src="../images/image2.png" alt="Project Two" loading="lazy">
+            </a>
+            <h4>Project Two</h4>
+          </div>
+          <!-- عنصر معرض 3 -->
+          <div class="portfolio-item" data-category="uiux">
+            <a href="../images/image3.png" data-lightbox="portfolio" data-title="Project Three">
+              <img src="../images/image3.png" alt="Project Three" loading="lazy">
+            </a>
+            <h4>Project Three</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم الاتصال (Contact) -->
+    <section id="contact" data-aos="fade-up">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p class="contact-info">Feel free to reach out for collaborations or just a friendly hello.</p>
+        <div class="contact-form">
+          <!-- استخدم خدمة Formspree أو أي خدمة خلفية لمعالجة النموذج -->
+          <form action="https://formspree.io/f/yourFormID" method="POST" aria-label="Contact Form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit"><i class="fas fa-paper-plane"></i> Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- التذييل -->
+  <footer role="contentinfo">
+    <p>&copy; 2025 Kevin - All Rights Reserved</p>
+  </footer>
+
+  <!-- مكتبات جافاسكربت -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="../js/script.js"></script>
+  <!-- جافاسكربت مخصص -->
+
+</body>
+</html>
