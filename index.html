@@ -7,10 +7,10 @@
   <title>Mahmoud | Portfolio</title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Kevin's professional portfolio showcasing UI/UX design, web design, and app design.">
-  <meta name="keywords" content="Kevin, Portfolio, UI/UX, Web Design, App Design">
-  <meta property="og:title" content="Kevin | Portfolio">
-  <meta property="og:description" content="Explore the professional portfolio of Kevin, a creative UI/UX designer and web developer.">
+  <meta name="description" content="Mahmoud's professional portfolio showcasing UI/UX design, web design, and app design.">
+  <meta name="keywords" content="Mahmoud, Portfolio, UI/UX, Web Design, App Design">
+  <meta property="og:title" content="Mahmoud | Portfolio">
+  <meta property="og:description" content="Explore the professional portfolio of Mahmoud, a creative UI/UX designer and web developer.">
   <meta property="og:image" content="images/og-image.jpg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="http://yourdomain.com/">
@@ -31,9 +31,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- الهيدر -->
+  <!-- Header -->
   <header role="banner">
-    <div class="logo" aria-label="Logo">Mahmoud Darwish .</div>
+    <div class="logo" aria-label="Logo">Mahmoud Darwish</div>
     <nav role="navigation" aria-label="Main Navigation">
       <ul>
         <li><a href="#home">Home</a></li>
@@ -45,7 +45,7 @@
     </nav>
   </header>
 
-  <!-- المحتوى الرئيسي -->
+  <!-- Main Content -->
   <main>
     <!-- Hero Section -->
     <section id="home" class="hero-section">
@@ -64,8 +64,8 @@
             <div class="hero-socials">
               <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
               <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-              <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-              <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
             </div>
           </div>
           <div class="hero-image-container">
@@ -75,63 +75,60 @@
       </div>
     </section>
 
-    <!-- قسم نبذة عني (About) -->
+    <!-- About Section -->
     <section id="about" data-aos="fade-right">
       <div class="container">
         <div class="about-img">
-          <img src="images/avtar.jpg" alt="About Kevin" loading="lazy">
+          <img src="images/avtar.jpg" alt="About Mahmoud" loading="lazy">
         </div>
         <div class="about-text">
           <h2>About Me</h2>
           <p>
-
             I'm a dedicated backend developer with a strong passion for building robust and scalable applications.
-            I specialize in server-side logic, databases, and API development,
-            ensuring that systems run smoothly and efficiently.
+            I specialize in server-side logic, databases, and API development, ensuring that systems run smoothly and efficiently.
             My focus is on writing clean, maintainable code that delivers high performance.
           </p>
           <ul>
             <li><strong>Skills:</strong> Backend Development, API Design, Database Management, Server-Side Logic</li>
             <li><strong>Experience:</strong> 5+ years in backend development</li>
-            <li><strong>Education:</strong> Bachelor's in Computer Science
-            </li>
+            <li><strong>Education:</strong> Bachelor's in Computer Science</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- قسم الخدمات (Services) -->
+    <!-- Services Section -->
     <section id="services" data-aos="fade-up">
-      <div class="container">
-        <h2 style="color: #ff0055; text-align: center; margin-bottom: 40px;">My Services</h2>
-        <div class="services-container">
-          <div class="service-box" data-aos="zoom-in">
-            <h3>API Development</h3>
-            <p>
-              Design and development of high-performance RESTful APIs
-            </p>
-          </div>
-          <div class="service-box" data-aos="zoom-in" data-aos-delay="100">
-            <h3>Database Solutions</h3>
-            <p>
-              Design and optimization of SQL and NoSQL databases
-            </p>
-          </div>
-          <div class="service-box" data-aos="zoom-in" data-aos-delay="200">
-            <h3>Cloud Solutions</h3>
-            <p>
-              Deployment and management on AWS, Azure, and Google Cloud.
-            </p>
-          </div>
+      <div class="service-box">
+        <div class="service-icon">
+          <i class="fas fa-server"></i>
         </div>
+        <h3>API Development</h3>
+        <p>Design and development of high-performance RESTful APIs.</p>
       </div>
+
+      <div class="service-box">
+        <div class="service-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>Database Solutions</h3>
+        <p>Design and optimization of SQL and NoSQL databases.</p>
+      </div>
+
+      <div class="service-box">
+        <div class="service-icon">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <h3>Cloud Solutions</h3>
+        <p>Deployment and management on AWS, Azure, and Google Cloud.</p>
+      </div>
+
     </section>
 
-    <!-- قسم معرض الأعمال (Portfolio) -->
+    <!-- Portfolio Section -->
     <section id="portfolio" data-aos="fade-up">
       <div class="container">
-        <h2 style="color: #ff0055;">My Portfolio</h2>
-        <!-- أزرار الفلترة -->
+        <h2 class="section-title">My Portfolio</h2>
         <div class="portfolio-filters">
           <button class="active" data-filter="all">All</button>
           <button data-filter="web">Attendance System</button>
@@ -139,38 +136,59 @@
           <button data-filter="uiux">UI/UX</button>
         </div>
         <div class="portfolio-grid">
-          <!-- عنصر معرض 1 -->
+          <!-- مشروع Attendance System -->
           <div class="portfolio-item" data-category="web">
-            <a href="images/image1.png" data-lightbox="portfolio" data-title="Project One">
-              <img src="images/image1.png" alt="Project One" loading="lazy">
-            </a>
-            <h4>Attendance System</h4>
+            <div class="portfolio-img">
+              <a href="images/image1.png" data-lightbox="portfolio" data-title="Attendance System">
+                <img src="images/image1.png" alt="Attendance System" loading="lazy">
+              </a>
+              <div class="portfolio-overlay">
+                <h4>Attendance System</h4>
+                <a href="https://github.com/username/attendance-system" target="_blank" class="portfolio-github">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
           </div>
-          <!-- عنصر معرض 2 -->
+          <!-- مشروع Realestate Web Site -->
           <div class="portfolio-item" data-category="app">
-            <a href="images/image2.png" data-lightbox="portfolio" data-title="Project Two">
-              <img src="images/image2.png" alt="Project Two" loading="lazy">
-            </a>
-            <h4>Realestate Web Site</h4>
+            <div class="portfolio-img">
+              <a href="images/image2.png" data-lightbox="portfolio" data-title="Realestate Web Site">
+                <img src="images/image2.png" alt="Realestate Web Site" loading="lazy">
+              </a>
+              <div class="portfolio-overlay">
+                <h4>Realestate Web Site</h4>
+                <a href="https://github.com/username/realestate-web" target="_blank" class="portfolio-github">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
           </div>
-          <!-- عنصر معرض 3 -->
+          <!-- مشروع UI/UX -->
           <div class="portfolio-item" data-category="uiux">
-            <a href="images/image3.png" data-lightbox="portfolio" data-title="Project Three">
-              <img src="images/image3.png" alt="Project Three" loading="lazy">
-            </a>
-            <h4>UI/UX</h4>
+            <div class="portfolio-img">
+              <a href="images/image3.png" data-lightbox="portfolio" data-title="UI/UX">
+                <img src="images/image3.png" alt="UI/UX" loading="lazy">
+              </a>
+              <div class="portfolio-overlay">
+                <h4>UI/UX Design</h4>
+                <a href="https://github.com/username/uiux-design" target="_blank" class="portfolio-github">
+                  <i class="fab fa-github"></i> View Code
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- قسم الاتصال (Contact) -->
+
+    <!-- Contact Section -->
     <section id="contact" data-aos="fade-up">
       <div class="container">
-        <h2>Contact Me</h2>
+        <h2 class="section-title">Contact Me</h2>
         <p class="contact-info">Feel free to reach out for collaborations or just a friendly hello.</p>
         <div class="contact-form">
-          <!-- استخدم خدمة Formspree أو أي خدمة خلفية لمعالجة النموذج -->
           <form action="https://formspree.io/f/yourFormID" method="POST" aria-label="Contact Form">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -188,16 +206,50 @@
     </section>
   </main>
 
-  <!-- التذييل -->
+  <!-- Footer -->
   <footer role="contentinfo">
-    <p>&copy; 2025 Kevin - All Rights Reserved</p>
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <a href="#">Mahmoud Darwish</a>
+          <p>Web Developer & Software Engineer | Passionate about creating impactful solutions.</p>
+        </div>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>About</h4>
+          <a href="#">My Portfolio</a>
+          <a href="#">Projects</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Stack Overflow</a>
+        </div>
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <p>&copy; 2025 Mahmoud Darwish - All Rights Reserved</p>
+    </div>
   </footer>
 
-  <!-- مكتبات جافاسكربت -->
+
+
+  <!-- JavaScript Libraries -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- Custom JavaScript -->
   <script src="js/script.js"></script>
-  <!-- جافاسكربت مخصص -->
-
 </body>
 </html>
