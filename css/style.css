@@ -1,6 +1,4 @@
-/* ==========================================================================
-   Base Styles & Reset
-   ========================================================================== */
+/* Base Styles & Reset */
 * {
   margin: 0;
   padding: 0;
@@ -15,26 +13,16 @@ body {
   scroll-behavior: smooth;
 }
 
-/* ==========================================================================
-     CSS Variables (لوحة ألوان ذهبي وأسود مع تدرجات)
-     ========================================================================== */
+/* CSS Variables */
 :root {
   --primary-color: #f1c40f;
-  /* ذهبي دافئ */
   --secondary-color: #000000;
-  /* أسود */
   --background-color: #000000;
-  /* خلفية أساسية سوداء */
   --bg-dark: #000000;
-  /* عناصر ذات خلفية سوداء */
   --bg-light: #1c1c1c;
-  /* تدرج داكن قريب من الأسود */
   --text-color: #ffffff;
-  /* نص أبيض */
   --text-muted: #cccccc;
-  /* نص ثانوي فاتح */
   --border-color: #333333;
-  /* حدود داكنة */
   --transition: all 0.3s ease;
   --container-width: 1200px;
   --spacing-sm: 10px;
@@ -42,9 +30,7 @@ body {
   --spacing-lg: 40px;
 }
 
-/* ==========================================================================
-     Layout & Containers
-     ========================================================================== */
+/* Layout & Containers */
 .container {
   width: 100%;
   max-width: var(--container-width);
@@ -58,9 +44,7 @@ section {
   padding: 60px var(--spacing-md);
 }
 
-/* ==========================================================================
-     Header & Navigation
-     ========================================================================== */
+/* Header & Navigation */
 header {
   width: 100%;
   padding: 20px;
@@ -98,7 +82,6 @@ nav ul li a:hover {
   color: var(--text-color);
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
   background: none;
@@ -109,23 +92,17 @@ nav ul li a:hover {
   padding: 0.5rem;
 }
 
-/* ==========================================================================
-     Main Content
-     ========================================================================== */
+/* Main Content */
 main {
   margin-top: 80px;
-  /* لتفادي تغطية الهيدر الثابت */
 }
 
-/* ==========================================================================
-     Hero Section (خلفية بتدرج ذهبي-أسود)
-     ========================================================================== */
+/* Hero Section */
 .hero-section {
   padding-top: 100px;
   min-height: 100vh;
   display: flex;
   align-items: center;
-  /* تدرج من الذهبي إلى الأسود */
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   overflow: hidden;
   position: relative;
@@ -155,7 +132,6 @@ main {
   animation: fadeInUp 0.5s ease forwards;
 }
 
-/* نص الاسم بتدرج من الذهبي إلى الأسود */
 .hero-intro .name {
   font-size: clamp(2.5rem, 5vw, 4rem);
   font-weight: 700;
@@ -205,13 +181,10 @@ main {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-/* تنسيق أيقونات التواصل في قسم الهيرو */
 .hero-socials {
   display: flex;
   gap: 15px;
-  /* مسافات بين الأيقونات */
   margin-top: 20px;
-  /* مسافة فاصلة عن باقي المحتوى */
 }
 
 .hero-socials a {
@@ -222,9 +195,7 @@ main {
   height: 40px;
   border-radius: 50%;
   background-color: var(--bg-light);
-  /* تدرج خلفي فاتح */
   color: var(--primary-color);
-  /* لون الأيقونة الأساسي */
   transition: background-color var(--transition), color var(--transition);
   text-decoration: none;
 }
@@ -243,16 +214,13 @@ main {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-/* ==========================================================================
-     About Section
-     ========================================================================== */
+/* About Section */
 #about {
   background-color: var(--bg-light);
   padding: 80px 20px;
@@ -309,9 +277,7 @@ main {
   margin-right: 0.5rem;
 }
 
-/* ==========================================================================
-   Services Section (قسم الخدمات - تصميم محسّن)
-   ========================================================================== */
+/* Services Section */
 #services {
   background-color: var(--bg-dark);
   text-align: center;
@@ -323,7 +289,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  /* زيادة الفراغ بين الصناديق */
 }
 
 .service-box {
@@ -338,7 +303,6 @@ main {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* تأثير تدرجي خفيف يظهر عند التفاعل */
 .service-box::before {
   content: "";
   position: absolute;
@@ -372,24 +336,18 @@ main {
   line-height: 1.8;
 }
 
-/* تنسيق الأيقونات في صناديق الخدمات */
 .service-icon {
   font-size: 3rem;
-  /* تكبير حجم الأيقونة */
   color: var(--primary-color);
   margin-bottom: 20px;
-  /* مسافة بين الأيقونة والعنوان */
 }
 
-/* يمكنك إضافة تأثيرات إضافية عند التفاعل */
 .service-box:hover .service-icon {
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
-/* ==========================================================================
-     Portfolio Section
-     ========================================================================== */
+/* Portfolio Section */
 #portfolio {
   background-color: var(--bg-light);
   padding: 80px 20px;
@@ -433,47 +391,13 @@ main {
 .portfolio-item img {
   width: 100%;
   display: block;
-}
-
-.portfolio-item h4 {
-  background-color: var(--bg-dark);
-  padding: 10px;
-  color: var(--primary-color);
-  margin: 0;
-}
-
-/* تنسيق شبكة المعرض */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-/* تنسيق كل عنصر في المعرض */
-.portfolio-item {
-  position: relative;
-  overflow: hidden;
-  border: 1px solid var(--border-color);
-  border-radius: 10px;
-}
-
-/* تنسيق الصورة داخل المشروع */
-.portfolio-img {
-  position: relative;
-}
-
-.portfolio-img img {
-  width: 100%;
-  display: block;
   transition: transform 0.3s ease;
 }
 
-/* تكبير الصورة عند مرور الماوس */
 .portfolio-item:hover .portfolio-img img {
   transform: scale(1.1);
 }
 
-/* تأثير overlay عند مرور الماوس */
 .portfolio-overlay {
   position: absolute;
   top: 0;
@@ -496,13 +420,11 @@ main {
   opacity: 1;
 }
 
-/* تنسيق العنوان داخل overlay */
 .portfolio-overlay h4 {
   margin-bottom: 15px;
   font-size: 1.5rem;
 }
 
-/* زر GitHub داخل overlay */
 .portfolio-github {
   display: inline-flex;
   align-items: center;
@@ -522,10 +444,7 @@ main {
   color: var(--primary-color);
 }
 
-
-/* ==========================================================================
-     Contact Section
-     ========================================================================== */
+/* Contact Section */
 #contact {
   background-color: var(--bg-dark);
   padding: 80px 20px;
@@ -577,6 +496,7 @@ main {
 .contact-form button:hover {
   background-color: #d4af37;
 }
+
 /* Footer Styles */
 footer {
   background-color: var(--bg-dark);
@@ -592,7 +512,6 @@ footer {
   margin: 0 auto;
 }
 
-/* Top Section */
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -615,7 +534,6 @@ footer {
   color: var(--text-light);
 }
 
-/* Social Icons */
 .footer-socials {
   display: flex;
   gap: 15px;
@@ -632,7 +550,6 @@ footer {
   transform: scale(1.1);
 }
 
-/* Footer Links */
 .footer-links {
   display: flex;
   justify-content: space-around;
@@ -661,13 +578,11 @@ footer {
   text-decoration: underline;
 }
 
-/* Copyright */
 footer p {
   font-size: 0.9rem;
   margin-top: 20px;
 }
 
-/* Back to Top Button */
 #back-to-top {
   position: fixed;
   bottom: 20px;
@@ -699,10 +614,6 @@ footer p {
   }
 }
 
-
-/* ==========================================================================
-     Responsive Styles
-     ========================================================================== */
 @media (max-width: 968px) {
   .hero-content {
     flex-direction: column-reverse;
