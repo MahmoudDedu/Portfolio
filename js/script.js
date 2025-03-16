@@ -72,9 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
-});
-
-document.addEventListener("DOMContentLoaded", function () {
+  // Initialize Swiper instances
   new Swiper(".attendance-slider", {
     loop: true,
     navigation: {
